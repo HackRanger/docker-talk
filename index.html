@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<style>
+body{
+	width:1024px;
+	font-size: 36px;
+	font-family: 'Armata', sans-serif;
+	background: url(images/pt-2.png);
+	color: #eee;
+	text-shadow: 1px 1px 2px #000;
+}
+
+	    #start{
+		    text-align:center;
+		    width:1024px;
+
+	    }
+
+	    #subsec{
+		    text-align: center;
+		    width: 1024px;
+	    }
+
+	    #slide1{
+		    text-align:center;
+		    width:1024px;
+
+	    }
+	    #slide2{
+		    text-align:center;
+		    width:1024px;
+
+	    }
+
+	    .step{
+		    text-align:center;
+		    width:1024px;
+	    }
+
+	    #slide7{
+		    width:400px;
+	    }
+	    #slide8{
+		    width:400px;
+	    }
+	    #slide9{
+		    width:400px;
+	    }
+
+	    .hint_text{
+		    margin-top: 120px;
+		    font-size:30px;
+		    background-color:#282a2f;
+		    padding:15px;
+		    border: 1px solid #484d52;
+		    border-radius: 5px;
+		    font-size: 18px;
+
+	    }
+
+
+
+	    .fallback-message {
+		    color: #eee;
+		    line-height: 1.3;
+		    width: 780px;
+		    padding: 10px 10px 0;
+		    margin: 20px auto;
+		    border: 1px solid #E4C652;
+		    border-radius: 10px;
+
+	    }
+
+	    .fallback-message p {
+		    margin-bottom: 10px;
+	    }
+
+	    .impress-supported .fallback-message {
+		    display: none;
+	    }
+	    em{
+		    font-style: normal;
+		    border-bottom: 1px solid #484d52;
+		    padding-bottom: 2px;
+		    color: #d5a830;
+	    }
+		</style>
+		<title></title>
+	</head>
+	<body class="impress-not-supported">
+		<div id="impress">
+      <!-- SLIDE 1 -->
+			<div id="start" class="step">
+				<p>Microservices and Container Services</p>
+				<p>Subramanya</p>
+				<p class='hint_text'>Slides and code available at
+				<em>github.com/hackranger</em></p>
+			</div>
+
+			<div class="step" data-x="0" data-y="1500" data-z="-1000">
+				<p>Little bit of history</p>
+				<p>Jeff Bezos @Amazon</p>
+      </div>
+      <div class="step" data-y="2000" data-z="-3000" data-scale="2">
+        All teams will henceforth expose their data and functionality through service interfaces.
+      </div>
+      <div  class="step" data-y="2500" data-z="-4500" data-scale="2">
+        Teams must communicate with each other through these interfaces.
+      </div>
+      <div  class="step" data-y="3500" data-z="-7500" data-scale="2">
+        It does not matter what technology they use.
+      </div>
+      <div  class="step" data-y="4000" data-z="-9000" data-scale="2">
+        All service interfaces, without exception, must be designed from the ground up to be externalizable.
+      </div>
+
+      <!-- SLIDE 2-->
+
+
+      <div  class="step" data-x="5000" data-y="4000">
+         <img src="images/monovsmicro.png" height="550" width="650">
+					<p>courtesy: Martin Fowler</p>
+			</div>
+
+      <!-- SLIDE 3 -->
+
+			<div class="step" data-x="10000" data-y="0">
+				<p>Definition of Microservices</p>
+        <p>-- James Lewis and Martin Fowler</p>
+			</div>
+      <div class="step" data-x="10000" data-z="-100" data-rotate-x="-90" data-scale="4">
+        Componentization via Services
+      </div>
+      <div class="step" data-x="10000" data-z="-500" data-rotate-x="-90"  data-scale="4">
+        Smart endpoint
+      </div>
+      <div class="step" data-x="10000" data-z="-1000" data-rotate-x="-90"  data-scale="4">
+        Decentralized goverance
+      </div>
+      <div class="step" data-x="10000" data-z="-1500" data-rotate-x="-90"  data-scale="4">
+        Decentralized data management
+      </div>
+      <div class="step" data-x="10000" data-z="-2000" data-rotate-x="-90"  data-scale="4">
+        Infrastructure automation
+      </div>
+      <div class="step" data-x="10000" data-z="-2500" data-rotate-x="-90"  data-scale="4">
+        Design for failure
+      </div>
+      <div class="step" data-x="10000" data-z="-3000" data-rotate-x="-90"  data-scale="4">
+        Evolutionary design
+      </div>
+
+
+      <!-- SLIDE 4 -->
+
+      <div  class="step" data-x="15000" data-y="4000" data-rotate-y="-90">
+         <img src="images/dockerusecase.png" height="550" width="850">
+          <p>Continuous integration and Continuous delivery</p>
+      </div>
+
+			<!-- SLIDE 5 -->
+
+			<div class="step" data-x="20000" data-y="2000">
+			 <h1>Containers</h1>
+				<p>
+					Operating system virtualization that allow you to run an application and its dependencies in resource-isolated processes.
+				</p>
+			</div>
+
+			<div  class="step" data-x="25000" data-y="4000" data-rotate-x="-90">
+         <img src="images/docker.png" height="550" width="850">
+          <p>Virtual Machines(HW level) vs Containers(OS level)</p>
+      </div>
+
+			<!-- SLIDE 6 -->
+			<div class="step" data-x="30000" data-y="2000">
+			 <h1>Advantages over VMs</h1>
+				<p>
+					Speed
+				</p>
+				<img src="images/speed.png" height="150" width="450">
+				<p>
+					Management
+				</p>
+				<p>
+					Disk Footprint
+				</p>
+				<p>
+					Ability to freeze and unfreeze containers
+				</p>
+			</div>
+
+			<!-- SLIDE 6 -->
+			<div class="step" data-x="35000" data-y="2000" data-rotate-y="-180">
+			 <h1>Docker</h1>
+				<img src="images/small_h.png" height="150" width="450">
+				<p>
+					Docker is excellent for microservices, as it isolates containers to one process or service.
+				</p>
+				<p>
+					This intentional containerization of single services or processes makes it very simple to manage and update these services.
+				</p>
+			</div>
+
+			<!-- SLIDE 7 -->
+			<div class="step"  data-x="40000" data-y="2000" data-rotate-y="-90">
+			 <h1>Docker Containers</h1>
+			 <ul>
+					 <li>Kernel namespaces</li>
+					 <li text-align="left">ControlGroups</li>
+					 <li>Root Capabilities</li>
+					 <li>Pivot_root</li>
+				 </ul>
+			</div>
+
+			<!-- SLIDE 8 -->
+
+			<div class="step"  data-x="45000" data-y="2000">
+			 <h1>Few things you should NOT do</h1>
+			</div>
+
+			<div class="step" data-x="45000" data-y="3000" data-z="-4000" data-rotate-z="-90" data-scale="2">
+				Don't store data in containers
+			</div>
+			<div class="step" data-x="46000" data-y="4000" data-z="-4500" data-rotate-z="-90" data-scale="2">
+				Don't ship your application in two pieces
+			</div>
+			<div class="step" data-x="47000" data-y="5000" data-z="-5000" data-rotate-z="-90" data-scale="2">
+				Don't create large images
+			</div>
+
+			<!-- SLIDE 9 -->
+			<div class="step" data-x="55000" data-y="1000">
+				<p>
+					Code and Demo
+				</p>
+			</div>
+
+			<!-- SLIDE 10 -->
+			<div class="step" data-x="65000" data-y="1000" data-rotate-x="-90">
+				<p>
+					Thank you!
+				</p>
+			</div>
+
+			<!-- SLIDE 11 -->
+			<div class="step" data-x="75000" data-y="1000" data-rotate-x="-90">
+				<h1>
+					Q & A
+				</h1>
+			</div>
+			<div class="fallback-message">
+				<p>Your browser <b>doesn't support the features required</b> by
+				impress.js, so you are presented with a simplified version of this
+				presentation.</p>
+				<p>For the best experience please use the latest <b>Chrome</b>,
+				<b>Safari</b> or <b>Firefox</b> browser.</p>
+			</div>
+			<script type="text/javascript" src="js/impress.js">
+			</script>
+			<script type="text/javascript">
+impress().init();
+		</script></div>
+	</body>
+</html>

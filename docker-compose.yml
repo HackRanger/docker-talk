@@ -1,0 +1,15 @@
+docker-talk:
+  image: "docker-talk"
+  mem_limit: "512m"
+  ports:
+    - "9025:80"
+cadvisor:
+  image: "google/cadvisor:latest"
+  mem_limit: "512m"
+  volumes:
+    - "/:/rootfs:ro"
+    - "/var/run:/var/run:rw"
+    - "/sys:/sys:ro"
+    - "/var/lib/docker/:/var/lib/docker:ro"
+  ports:
+    - "8080:8080"

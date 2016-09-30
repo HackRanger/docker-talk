@@ -1,0 +1,6 @@
+common:
+  volumes:
+    - "/sys/fs/cgroup:/sys/fs/cgroup:ro"
+  net: "host"
+  environment:
+    - "DISCOVERY_HOST=${DISCOVERY_HOST}"
